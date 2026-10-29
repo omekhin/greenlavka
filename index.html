@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Зелёная лавка — премиальные комнатные растения</title>
+<meta name="description" content="Премиальные комнатные растения для дома и офиса. Более 300 видов. Доставка по Москве и Московской области, Ивановской области, Ярославлю и Владимиру.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#14291C; --forest-2:#1D3A28; --forest-3:#2C5039;
+  --milk:#F7F2EA; --milk-2:#EFE7DA; --cream-line:#E2D8C8;
+  --blush:#EBCBC5; --blush-2:#F4E1DC; --rose:#9A4F48;
+  --ink:#1A231D; --muted:#5B6359;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--milk);color:var(--ink);font-family:'Manrope',system-ui,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;letter-spacing:-0.01em;margin:0;line-height:1.05}
+em{font-style:italic;font-weight:500}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font-family:inherit;transition:background .2s,color .2s,border-color .2s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-blush{background:var(--blush);color:var(--forest)}
+.btn-blush:hover{background:#F2D8D2}
+.btn-line{border-color:rgba(247,242,234,.5);color:var(--milk)}
+.btn-line:hover{border-color:var(--milk);background:rgba(247,242,234,.08)}
+.btn-forest{background:var(--forest);color:var(--milk)}
+.btn-forest:hover{background:var(--forest-3)}
+section{scroll-margin-top:72px}
+
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(20,41,28,.96);backdrop-filter:blur(10px);color:var(--milk)}
+.head{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:72px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo b{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;letter-spacing:.01em}
+.logo small{display:block;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--blush);margin-top:-2px}
+nav{display:flex;gap:28px;font-size:15px}
+nav a{text-decoration:none;opacity:.85;padding:8px 0}
+nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
+.head .btn{min-height:44px;padding:0 20px;font-size:14px}
+@media (max-width:860px){nav{display:none}.head .btn span{display:none}.head .btn{width:44px;padding:0}}
+
+/* hero */
+.hero{background:var(--forest);color:var(--milk);overflow:hidden}
+.hero-in{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px;align-items:center;padding-top:72px;padding-bottom:96px}
+.hero .eyebrow{color:var(--blush)}
+.hero h1{font-size:clamp(46px,6.6vw,92px);margin:22px 0 24px;color:var(--milk)}
+.hero h1 em{color:var(--blush)}
+.hero p{font-size:19px;color:#D7DDD3;max-width:520px;margin:0 0 36px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:40px;margin-top:48px;padding-top:28px;border-top:1px solid rgba(247,242,234,.16)}
+.facts strong{display:block;font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:600;line-height:1;color:var(--milk)}
+.facts span{font-size:14px;color:#B9C4B6}
+.hero-art{position:relative;max-width:520px;justify-self:center;width:100%}
+.hero-art .frame{position:relative;border-radius:260px 260px 28px 28px;overflow:hidden;aspect-ratio:4/5;background:var(--forest-2);border:10px solid var(--forest-2);outline:1px solid rgba(235,203,197,.4);outline-offset:10px}
+.hero-art .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero-art .note{position:absolute;left:-24px;bottom:40px;background:var(--milk);color:var(--forest);border-radius:20px;padding:16px 20px;max-width:270px;box-shadow:0 18px 40px rgba(0,0,0,.25);font-size:14px;line-height:1.4}
+.hero-art .note b{display:block;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;margin-bottom:2px}
+.hero-art .tag{position:absolute;right:-8px;top:32px;background:var(--blush);color:var(--forest);border-radius:999px;padding:10px 16px;font-size:13px;font-weight:700}
+@media (max-width:560px){.hero-art .note{left:12px}.hero-art .tag{right:12px}}
+
+/* regions ribbon */
+.ribbon{background:var(--blush);color:var(--forest);overflow:hidden;white-space:nowrap}
+.ribbon-track{display:inline-flex;gap:36px;padding:16px 0;animation:run 40s linear infinite;font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600}
+.ribbon-track span::after{content:"✦";margin-left:36px;font-size:14px;vertical-align:middle;color:var(--rose)}
+@keyframes run{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ribbon-track{animation:none}}
+
+/* collection */
+.collection{padding:96px 0}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:36px}
+.sec-head h2{font-size:clamp(40px,5vw,64px);color:var(--forest)}
+.sec-head .eyebrow{color:var(--rose);display:block;margin-bottom:14px}
+.sec-head p{margin:14px 0 0;color:var(--muted);font-size:17px;max-width:520px}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--cream-line);background:transparent;color:var(--forest);font:inherit;font-weight:600;font-size:14px;cursor:pointer}
+.filters button:hover{border-color:var(--forest)}
+.filters button[aria-pressed="true"]{background:var(--forest);border-color:var(--forest);color:var(--milk)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:28px 24px}
+.card{display:flex;flex-direction:column;gap:16px}
+.gallery{position:relative;border-radius:24px;overflow:hidden;background:var(--milk-2);aspect-ratio:4/5}
+.slides{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+.slides::-webkit-scrollbar{display:none}
+.slides a{flex:0 0 100%;height:100%;scroll-snap-align:start;position:relative;display:block}
+.slides img{width:100%;height:100%;object-fit:cover}
+.arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(247,242,234,.92);color:var(--forest);display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity .2s;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.arrow svg{width:20px;height:20px}
+.arrow.prev{left:10px}.arrow.next{right:10px}
+.gallery:hover .arrow,.arrow:focus-visible{opacity:1}
+.arrow[disabled]{opacity:0!important;pointer-events:none}
+.dots{position:absolute;left:0;right:0;bottom:62px;display:flex;justify-content:center;gap:6px;pointer-events:none}
+.dots i{width:6px;height:6px;border-radius:50%;background:rgba(247,242,234,.55);transition:.2s}
+.dots i.on{background:var(--milk);width:18px;border-radius:3px}
+.count{position:absolute;top:14px;right:14px;background:rgba(20,41,28,.75);color:var(--milk);font-size:12px;font-weight:600;padding:5px 10px;border-radius:999px;pointer-events:none}
+.buy-hint{position:absolute;left:12px;right:12px;bottom:12px;min-height:42px;border-radius:999px;background:rgba(20,41,28,.88);color:var(--milk);display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px;font-weight:600;pointer-events:none}
+.buy-hint svg{width:18px;height:18px}
+@media (hover:none){.arrow{display:none}}
+.card .meta{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:0 4px}
+.card h3{font-size:25px;color:var(--forest)}
+.card .h{font-size:13px;color:var(--muted);white-space:nowrap}
+.card .cat{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);padding:0 4px;margin-bottom:-10px}
+.more{margin-top:56px;background:var(--forest);color:var(--milk);border-radius:32px;padding:44px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+.more h3{font-size:clamp(30px,3.6vw,44px)}
+.more h3 em{color:var(--blush)}
+.more p{margin:10px 0 0;color:#C9D2C5;max-width:560px}
+
+/* values */
+.values{background:var(--milk-2);padding:96px 0}
+.vals{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--cream-line);border:1px solid var(--cream-line);border-radius:28px;overflow:hidden;margin-top:44px}
+.val{background:var(--milk);padding:32px 28px;display:flex;flex-direction:column;gap:12px}
+.val .ico{width:52px;height:52px;border-radius:50%;background:var(--blush-2);color:var(--forest);display:flex;align-items:center;justify-content:center}.val .ico svg{width:26px;height:26px}
+.val h3{font-size:27px;color:var(--forest)}
+.val p{margin:0;color:var(--muted);font-size:15px}
+
+/* delivery */
+.delivery{padding:96px 0}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:start}
+.cities{list-style:none;margin:0;padding:0;border-top:1px solid var(--cream-line)}
+.cities li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 4px;border-bottom:1px solid var(--cream-line)}
+.cities b{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;color:var(--forest)}
+.cities span{font-size:14px;color:var(--muted);text-align:right}
+.steps{display:flex;flex-direction:column;gap:14px}
+.step{display:flex;gap:18px;align-items:flex-start;background:var(--blush-2);border-radius:22px;padding:22px 24px}
+.step .n{flex:none;width:44px;height:44px;border-radius:50%;background:var(--forest);color:var(--milk);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600}
+.step h3{font-size:24px;color:var(--forest);margin-bottom:4px}
+.step p{margin:0;color:#5D4B47;font-size:15px}
+
+/* reviews */
+.reviews{background:var(--forest);color:var(--milk);padding:96px 0;overflow:hidden}
+.rhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px}
+.score{display:flex;align-items:flex-end;gap:18px}
+.score strong{font-family:'Cormorant Garamond',serif;font-size:96px;line-height:.85;color:var(--blush)}
+.score span{color:#C9D2C5;font-size:15px;max-width:180px}
+.rtrack{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:24px;padding:44px 24px 8px;margin:0 -24px;scrollbar-width:none}
+.rtrack::-webkit-scrollbar{display:none}
+.quote{flex:0 0 min(380px,82vw);scroll-snap-align:start;margin:0;border:1px solid rgba(247,242,234,.18);border-radius:26px;padding:30px;display:flex;flex-direction:column;gap:16px}
+.quote blockquote{margin:0;font-family:'Cormorant Garamond',serif;font-size:25px;line-height:1.28;font-style:italic;flex-grow:1}
+.quote figcaption{font-size:14px;color:#C9D2C5}
+.stars{color:var(--blush);letter-spacing:3px}
+.rnav{display:flex;gap:10px}
+.rnav button{width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(247,242,234,.4);background:transparent;color:var(--milk);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.rnav button:hover{border-color:var(--milk)}
+.rnav svg{width:20px;height:20px}
+@media (hover:none){.rnav{display:none}}
+.rlinks{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.btn-ghost-light{border-color:rgba(247,242,234,.45);color:var(--milk)}
+.btn-ghost-light:hover{border-color:var(--milk);background:rgba(247,242,234,.08)}
+.btn svg.th{width:20px;height:20px}
+
+/* footer */
+footer{background:#0E1E14;color:#C9D2C5;padding:72px 0 40px}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:36px}
+footer h3{font-size:34px;color:var(--milk)}
+footer b{display:block;color:var(--milk);margin-bottom:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+footer a{color:var(--blush)}
+footer p{margin:0 0 6px}
+.legal{border-top:1px solid #23392B;margin-top:48px;padding-top:22px;font-size:13px;color:#8FA08C}
+.tg-float{position:fixed;right:20px;bottom:20px;z-index:50;width:62px;height:62px;border-radius:50%;background:var(--blush);color:var(--forest);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(0,0,0,.25);text-decoration:none}
+.tg-float svg{width:28px;height:28px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap head">
+    <a class="logo" href="#top" aria-label="Зелёная лавка — наверх">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" fill="none" stroke="#EBCBC5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 31V15"/><path d="M17 20c-5 0-9-4-9-10 5 0 9 4 9 10z"/><path d="M17 16c0-6 4-11 10-11 0 6-4 11-10 11z"/></svg>
+      <span><b>Зелёная лавка</b><small>Plant’s premium</small></span>
+    </a>
+    <nav aria-label="Меню">
+      <a href="#collection">Коллекция</a>
+      <a href="#values">О нас</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#reviews">Отзывы</a>
+    </nav>
+    <a class="btn btn-blush" href="https://t.me/kapetusha" target="_blank" rel="noopener" aria-label="Написать в Telegram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M21.9 4.6 18.7 19.7c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.4 1.4 11.9c-1-.3-1.1-1 .2-1.5L20.4 3.2c.9-.3 1.7.2 1.5 1.4z"/></svg><span>Написать в Telegram</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <span class="eyebrow">Premium plants · более 300 видов</span>
+        <h1>Растения, которые <em>меняют</em> пространство</h1>
+        <p>Премиальные комнатные растения для дома и офиса. Отбираем каждое вручную, подбираем кашпо и бережно доставляем. Нажмите на фото — и сразу напишите нам в Telegram.</p>
+        <div class="cta">
+          <a class="btn btn-blush" href="#collection">Смотреть коллекцию</a>
+          <a class="btn btn-line" href="https://t.me/kapetusha" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M21.9 4.6 18.7 19.7c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.4 1.4 11.9c-1-.3-1.1-1 .2-1.5L20.4 3.2c.9-.3 1.7.2 1.5 1.4z"/></svg>Подобрать растение</a>
+        </div>
+        <div class="facts">
+          <div><strong>300+</strong><span>видов растений</span></div>
+          <div><strong>до 2 м</strong><span>крупные экземпляры</span></div>
+          <div><strong>5.0</strong><span>оценка покупателей</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="frame"><img src="img/hero-shop.webp" alt="Зал «Зелёной лавки»: десятки растений у высокого окна"></div>
+        <span class="tag">Для дома и офиса</span>
+        <div class="note"><b>Выберите сегодня,</b>а завтра растение будет у вас</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ribbon" aria-label="География доставки: Москва, Московская область, Ивановская область, Ярославль, Владимир">
+    <div class="ribbon-track" aria-hidden="true">
+      <span>Москва</span><span>Московская область</span><span>Ивановская область</span><span>Ярославль</span><span>Владимир</span>
+      <span>Москва</span><span>Московская область</span><span>Ивановская область</span><span>Ярославль</span><span>Владимир</span>
+      <span>Москва</span><span>Московская область</span><span>Ивановская область</span><span>Ярославль</span><span>Владимир</span>
+      <span>Москва</span><span>Московская область</span><span>Ивановская область</span><span>Ярославль</span><span>Владимир</span>
+    </div>
+  </div>
+
+  <section class="collection" id="collection">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Сейчас в наличии</span>
+          <h2>Коллекция</h2>
+          <p>Листайте фото, а когда найдёте «то самое» растение — нажмите на снимок. Откроется Telegram с готовым сообщением и этой фотографией.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Категории" id="filters"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+
+      <div class="more">
+        <div>
+          <h3>Не нашли своё? <em>Привезём под заказ</em></h3>
+          <p>В каталоге — лишь часть ассортимента. Подберём растение под ваш интерьер, свет и бюджет: монстеры, шеффлеры и пальмы до 2 метров, редкие вариегатные сорта.</p>
+        </div>
+        <a class="btn btn-blush" href="https://t.me/kapetusha?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%BE%D0%BC%D0%BE%D0%B3%D0%B8%D1%82%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%80%D0%B0%D1%81%D1%82%D0%B5%D0%BD%D0%B8%D0%B5" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M21.9 4.6 18.7 19.7c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.4 1.4 11.9c-1-.3-1.1-1 .2-1.5L20.4 3.2c.9-.3 1.7.2 1.5 1.4z"/></svg>Подобрать в Telegram</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="values" id="values">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:0">
+        <div>
+          <span class="eyebrow">Plant’s premium</span>
+          <h2>Всё про качественные растения</h2>
+        </div>
+      </div>
+      <div class="vals">
+        <div class="val"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12C12 7 8 4 4 4c0 5 3 8 8 8z"/><path d="M12 12c0-5 4-8 8-8 0 5-3 8-8 8z"/></svg></span><h3>Отбор вручную</h3><p>Берём только здоровые, сформированные экземпляры — каждое растение осматриваем лично.</p></div>
+        <div class="val"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10h14l-1.6 10H6.6z"/><path d="M4 10h16"/><path d="M12 10V5"/><path d="M12 7c-2-2-4-2-5-1M12 7c2-2 4-2 5-1"/></svg></span><h3>Готово к интерьеру</h3><p>Растения приезжают в подобранных кашпо — можно сразу ставить на место или дарить.</p></div>
+        <div class="val"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></span><h3>Фото до отправки</h3><p>Показываем именно ваше растение перед доставкой, чтобы вы видели, что покупаете.</p></div>
+        <div class="val"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span><h3>Забота после покупки</h3><p>Подскажем, где поставить растение и как ухаживать, — на связи в Telegram.</p></div>
+        <div class="val"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M10 21v-4h4v4"/></svg></span><h3>Озеленение офисов</h3><p>Подберём крупные растения для офиса, шоурума или ресторана и привезём всё сразу.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="delivery" id="delivery">
+    <div class="wrap dgrid">
+      <div>
+        <div class="sec-head"><div><span class="eyebrow">География</span><h2>Доставка</h2><p>Бережно упаковываем и привозим растения в пять регионов. Сроки и стоимость рассчитаем в Telegram под ваш адрес.</p></div></div>
+        <ul class="cities">
+          <li><b>Москва</b><span>регулярные доставки</span></li>
+          <li><b>Московская область</b><span>по согласованию</span></li>
+          <li><b>Ивановская область</b><span>Иваново и область</span></li>
+          <li><b>Ярославль</b><span>по согласованию</span></li>
+          <li><b>Владимир</b><span>по согласованию</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="sec-head"><div><span class="eyebrow">Как заказать</span><h2>Три шага</h2></div></div>
+        <div class="steps">
+          <div class="step"><span class="n">1</span><div><h3>Нажмите на фото</h3><p>Откроется чат с готовым сообщением: «Хочу купить этот цветок» и ссылкой на снимок.</p></div></div>
+          <div class="step"><span class="n">2</span><div><h3>Обсудим детали</h3><p>Расскажем о растении, подберём кашпо, согласуем адрес и время доставки.</p></div></div>
+          <div class="step"><span class="n">3</span><div><h3>Получите растение</h3><p>Перед отправкой пришлём фото, затем бережно привезём к вам.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <div class="rhead">
+        <div>
+          <span class="eyebrow" style="color:var(--blush)">Отзывы</span>
+          <h2 style="font-size:clamp(40px,5vw,64px);margin-top:14px">Нам доверяют</h2>
+        </div>
+        <div class="score"><strong>5.0</strong><span>средняя оценка, 66 оценок покупателей</span></div>
+        <div class="rnav"><button type="button" id="rPrev" aria-label="Предыдущие отзывы"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button><button type="button" id="rNext" aria-label="Следующие отзывы"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button></div>
+      </div>
+      <div class="rtrack" id="rTrack"><figure class="quote"><span class="stars" aria-label="5 из 5">★★★★★</span><blockquote>«Прекраснейший сервис. Достойное качество. Все в восторге, даже кошка))»</blockquote><figcaption>Елена · май 2026</figcaption></figure><figure class="quote"><span class="stars" aria-label="5 из 5">★★★★★</span><blockquote>«Впервые заказывала комнатное растение в подарок. Имениннице очень понравилось и доставили прямо в срок💚»</blockquote><figcaption>Мария · март 2026</figcaption></figure><figure class="quote"><span class="stars" aria-label="5 из 5">★★★★★</span><blockquote>«Очень красивый и ухоженный цветок 🌹 Мама очень довольна🥹 доставили в срок и в красивой упаковке, а также написали рекомендации по уходу даже☺️»</blockquote><figcaption>Жанна · февраль 2026</figcaption></figure><figure class="quote"><span class="stars" aria-label="5 из 5">★★★★★</span><blockquote>«…доставили аккуратно как на фото, всем очень довольна, спасибо продавцу за обратную связь!🤍»</blockquote><figcaption>Валерия · январь 2026</figcaption></figure><figure class="quote"><span class="stars" aria-label="5 из 5">★★★★★</span><blockquote>«Цветы великолепные. Спасибо вам большое.»</blockquote><figcaption>Иван · январь 2026</figcaption></figure><figure class="quote"><span class="stars" aria-label="5 из 5">★★★★★</span><blockquote>«спасибо вам большое, очень милый цветочек! )»</blockquote><figcaption>Покупатель · март 2026</figcaption></figure><figure class="quote"><span class="stars" aria-label="5 из 5">★★★★★</span><blockquote>«Очень красивый цветок 🥰 Благодарю)»</blockquote><figcaption>Алина · декабрь 2025</figcaption></figure></div>
+      <div class="rlinks">
+        <a class="btn btn-blush" href="https://flowwow.com/shop/zelenaya-lavkaf-3193/" target="_blank" rel="noopener">Все 66 отзывов с фото</a>
+        <a class="btn btn-ghost-light" href="https://www.threads.com/@kapetusha" target="_blank" rel="noopener"><svg class="th" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M16.8 11.3c-.1-2.9-1.9-4.6-4.6-4.6-1.6 0-2.9.7-3.7 1.9"/><path d="M8.2 15.4c.4 1.6 1.8 2.5 3.6 2.5 2.4 0 4-1.5 4-3.6 0-2.6-2.6-3.2-4.6-3.1-1.9.1-3.1 1-3 2.4.1 1.3 1.4 2 2.8 1.9 2.2-.2 3.4-1.9 3.4-5.3"/><path d="M19.5 9C18.4 4.7 15.6 3 12 3 6.9 3 4 6.4 4 12s2.9 9 8 9c3.8 0 6.7-1.9 7.6-5"/></svg>Живые фото в Threads</a>
+        <a class="btn btn-ghost-light" href="https://t.me/greenlavka37" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M21.9 4.6 18.7 19.7c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.4 1.4 11.9c-1-.3-1.1-1 .2-1.5L20.4 3.2c.9-.3 1.7.2 1.5 1.4z"/></svg>Канал в Telegram</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><h3>Зелёная лавка</h3><p style="margin-top:10px">Премиальные комнатные растения для дома и офиса.</p></div>
+      <div><b>Заказ и вопросы</b><p>Telegram: <a href="https://t.me/kapetusha" target="_blank" rel="noopener">@kapetusha</a></p><p>Канал: <a href="https://t.me/greenlavka37" target="_blank" rel="noopener">@greenlavka37</a></p><p>Threads: <a href="https://www.threads.com/@kapetusha" target="_blank" rel="noopener">@kapetusha</a></p></div>
+      <div><b>Доставка</b><p>Москва и Московская область</p><p>Ивановская область</p><p>Ярославль · Владимир</p></div>
+    </div>
+    <div class="legal">© 2026 Зелёная лавка · Самозанятый Петухова Екатерина Александровна, ИНН 371121442745</div>
+  </div>
+</footer>
+
+<a class="tg-float" href="https://t.me/kapetusha" target="_blank" rel="noopener" aria-label="Написать в Telegram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M21.9 4.6 18.7 19.7c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.4 1.4 11.9c-1-.3-1.1-1 .2-1.5L20.4 3.2c.9-.3 1.7.2 1.5 1.4z"/></svg></a>
+
+<script src="products.js"></script>
+<script>
+// Ссылка на фото в сообщении Telegram ведёт на ваш сайт. На GitHub Pages адрес
+// определяется сам; для своего домена можно вписать его сюда, например 'https://greenlavka.ru/'.
+const SITE_URL = '';
+const TG = 'kapetusha';
+const BASE = SITE_URL || ((/^https?:$/.test(location.protocol) && !/claude|anthropic|localhost|127\.0\.0\.1/.test(location.hostname)) ? new URL('.', location.href).href : '');
+const PRODUCTS = window.PRODUCTS || [];
+const CATS = [
+  {id:'all', label:'Все'}, {id:'pots', label:'Цветы в горшках'}, {id:'ficus', label:'Фикусы'},
+  {id:'trees', label:'Деревья и крупные'}, {id:'zz', label:'Замиокулькас'}, {id:'succ', label:'Суккуленты и подарки'}
+];
+const CAT_NAME = Object.fromEntries(CATS.map(c => [c.id, c.label]));
+const TG_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M21.9 4.6 18.7 19.7c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.4 1.4 11.9c-1-.3-1.1-1 .2-1.5L20.4 3.2c.9-.3 1.7.2 1.5 1.4z"/></svg>';
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const local = (p, i) => 'img/' + p.slug.replace(/-+$/, '') + '-' + (i + 1) + '.webp';
+function photoUrl(p, i) {
+  return BASE ? BASE.replace(/\/?$/, '/') + local(p, i) : '';
+}
+function tgUrl(p, i) {
+  const url = photoUrl(p, i);
+  const text = 'Здравствуйте! Хочу купить этот цветок: ' + p.name + ' (' + p.h + ')' + (url ? '\n' + url : '');
+  return 'https://t.me/' + TG + '?text=' + encodeURIComponent(text);
+}
+const ARR_L = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
+const ARR_R = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>';
+
+function card(p, idx) {
+  const n = p.ids.length;
+  const slides = p.ids.map((_, i) =>
+    '<a href="' + tgUrl(p, i) + '" target="_blank" rel="noopener" aria-label="Хочу купить «' + esc(p.name) + '» — фото ' + (i+1) + ' из ' + n + ', написать в Telegram">' +
+    '<img src="' + local(p, i) + '" alt="' + esc(p.name) + ', фото ' + (i+1) + '" loading="' + (idx < 4 && i === 0 ? 'eager' : 'lazy') + '" width="720" height="900"></a>').join('');
+  const dots = p.ids.map((_, i) => '<i' + (i === 0 ? ' class="on"' : '') + '></i>').join('');
+  return '<article class="card">' +
+    '<div class="gallery">' +
+      '<div class="slides">' + slides + '</div>' +
+      '<button type="button" class="arrow prev" aria-label="Предыдущее фото" disabled>' + ARR_L + '</button>' +
+      '<button type="button" class="arrow next" aria-label="Следующее фото">' + ARR_R + '</button>' +
+      '<span class="count">1 / ' + n + '</span>' +
+      '<div class="dots" aria-hidden="true">' + dots + '</div>' +
+      '<span class="buy-hint" aria-hidden="true">' + TG_ICON + 'Хочу этот цветок</span>' +
+    '</div>' +
+    '<span class="cat">' + CAT_NAME[p.cat] + '</span>' +
+    '<div class="meta"><h3>' + esc(p.name) + '</h3><span class="h">' + p.h + '</span></div>' +
+  '</article>';
+}
+
+function wire(cardEl) {
+  const track = cardEl.querySelector('.slides');
+  const prev = cardEl.querySelector('.prev'), next = cardEl.querySelector('.next');
+  const dots = cardEl.querySelectorAll('.dots i'), count = cardEl.querySelector('.count');
+  const n = dots.length;
+  const cur = () => Math.round(track.scrollLeft / track.clientWidth);
+  const update = () => {
+    const i = Math.min(n - 1, Math.max(0, cur()));
+    dots.forEach((d, k) => d.classList.toggle('on', k === i));
+    count.textContent = (i + 1) + ' / ' + n;
+    prev.disabled = i === 0; next.disabled = i === n - 1;
+  };
+  const go = d => track.scrollTo({left: (cur() + d) * track.clientWidth, behavior: 'smooth'});
+  prev.addEventListener('click', () => go(-1));
+  next.addEventListener('click', () => go(1));
+  let t; track.addEventListener('scroll', () => { clearTimeout(t); t = setTimeout(update, 60); }, {passive: true});
+  // перетаскивание мышью на компьютере
+  let down = false, sx = 0, sl = 0, moved = false;
+  track.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse') return; down = true; moved = false; sx = e.clientX; sl = track.scrollLeft; });
+  window.addEventListener('pointermove', e => { if (!down) return; const dx = e.clientX - sx; if (Math.abs(dx) > 6) { moved = true; track.style.scrollSnapType = 'none'; track.scrollLeft = sl - dx; } });
+  window.addEventListener('pointerup', () => { if (!down) return; down = false; track.style.scrollSnapType = ''; if (moved) { const i = Math.round(track.scrollLeft / track.clientWidth); track.scrollTo({left: i * track.clientWidth, behavior: 'smooth'}); } });
+  track.addEventListener('click', e => { if (moved) { e.preventDefault(); moved = false; } }, true);
+  track.addEventListener('dragstart', e => e.preventDefault());
+}
+
+let current = 'all';
+function render() {
+  const grid = document.getElementById('grid');
+  grid.innerHTML = PRODUCTS.filter(p => current === 'all' || p.cat === current).map(card).join('');
+  grid.querySelectorAll('.card').forEach(wire);
+  document.querySelectorAll('#filters button').forEach(b => b.setAttribute('aria-pressed', b.dataset.cat === current ? 'true' : 'false'));
+}
+const f = document.getElementById('filters');
+f.innerHTML = CATS.map(c => '<button type="button" data-cat="' + c.id + '" aria-pressed="false">' + c.label + '</button>').join('');
+f.addEventListener('click', e => { const b = e.target.closest('button'); if (b) { current = b.dataset.cat; render(); } });
+render();
+
+const rt = document.getElementById('rTrack');
+const step = () => (rt.querySelector('.quote').offsetWidth + 20);
+document.getElementById('rPrev').addEventListener('click', () => rt.scrollBy({left: -step(), behavior: 'smooth'}));
+document.getElementById('rNext').addEventListener('click', () => rt.scrollBy({left: step(), behavior: 'smooth'}));
+</script>
+</body>
+</html>
