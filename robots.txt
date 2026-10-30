@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://green-lavka-37.ru/sitemap.xml
