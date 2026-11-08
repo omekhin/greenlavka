@@ -1,4 +1,4 @@
-// Каталог «Зелёной лавки». Обновляется скриптом синхронизации.
+// Каталог «Зелёной лавки». price — цена на Flowwow (Иваново). Обновляется при синхронизации.
 window.PRODUCTS = [
  {
   "slug": "striliciya-nikolaya-6703",
@@ -12,7 +12,8 @@ window.PRODUCTS = [
    "40/1790954936_53364140.jpg",
    "43/1790954938_79329443.jpg",
    "16/1790954941_32154416.jpg"
-  ]
+  ],
+  "price": 3500
  },
  {
   "slug": "filodendron-burle-marks-v-1174",
@@ -25,7 +26,8 @@ window.PRODUCTS = [
    "69/1790954810_73376669.jpg",
    "04/1790954812_52896704.jpg",
    "13/1790954817_94851213.jpg"
-  ]
+  ],
+  "price": 8000
  },
  {
   "slug": "alokaziya-regal-shilds-rozovoe",
@@ -38,7 +40,8 @@ window.PRODUCTS = [
    "32/1790695891_37995732.jpg",
    "88/1790695893_28077688.jpg",
    "49/1790695894_19758549.jpg"
-  ]
+  ],
+  "price": 3900
  },
  {
   "slug": "diffenbahiya-krokodil-1-metr-3",
@@ -52,7 +55,8 @@ window.PRODUCTS = [
    "45/1790955610_45994945.jpg",
    "26/1790955614_55708626.jpg",
    "25/1790955617_23015525.jpg"
-  ]
+  ],
+  "price": 6500
  },
  {
   "slug": "fikus-kauchukonosniy-sorta-tin",
@@ -66,7 +70,8 @@ window.PRODUCTS = [
    "60/1790955964_39301660.jpg",
    "02/1790955966_23589402.jpg",
    "57/1790955968_24397457.jpg"
-  ]
+  ],
+  "price": 5000
  },
  {
   "slug": "epipremnum-liana-s-bambukovoy-",
@@ -80,7 +85,8 @@ window.PRODUCTS = [
    "50/1790955769_41289050.jpg",
    "94/1790955772_94171694.jpg",
    "24/1790955775_31480524.jpg"
-  ]
+  ],
+  "price": 5225
  },
  {
   "slug": "alokaziya-v-molochnom-kashpo",
@@ -93,7 +99,8 @@ window.PRODUCTS = [
    "30/1775410855_74132930.jpg",
    "16/1775410857_16793716.jpg",
    "66/1775410859_98311266.jpg"
-  ]
+  ],
+  "price": 3750
  },
  {
   "slug": "zamiokulkas-7783",
@@ -105,7 +112,8 @@ window.PRODUCTS = [
    "33/1764105042_94940033.jpg",
    "91/1764105042_32093791.jpg",
    "51/1764105042_47656451.jpg"
-  ]
+  ],
+  "price": 6900
  },
  {
   "slug": "dracena-shikarnaya-yarkaya",
@@ -119,7 +127,8 @@ window.PRODUCTS = [
    "47/1790955186_54569647.jpg",
    "50/1790955189_25128950.jpg",
    "40/1790955191_59378140.jpg"
-  ]
+  ],
+  "price": 3900
  },
  {
   "slug": "epipremnum-vysokiy",
@@ -133,7 +142,8 @@ window.PRODUCTS = [
    "80/1775411033_97232280.jpg",
    "99/1775411035_36457199.jpg",
    "91/1775411037_23551691.jpg"
-  ]
+  ],
+  "price": 5000
  },
  {
   "slug": "fikus-natasha-9397",
@@ -145,7 +155,8 @@ window.PRODUCTS = [
    "63/1775409845_33343163.jpg",
    "71/1775409848_33206671.jpg",
    "12/1775409851_61049912.jpg"
-  ]
+  ],
+  "price": 4900
  },
  {
   "slug": "alokaziya-misholtca",
@@ -159,7 +170,8 @@ window.PRODUCTS = [
    "43/1790771481_85100843.jpg",
    "34/1790771483_68885634.jpg",
    "30/1790771486_70502230.jpg"
-  ]
+  ],
+  "price": 3600
  },
  {
   "slug": "kalateya-rozeopikta-dotti-6175",
@@ -172,7 +184,8 @@ window.PRODUCTS = [
    "46/1768994148_88255346.jpg",
    "91/1768994149_53644991.jpg",
    "81/1768994149_54094681.jpg"
-  ]
+  ],
+  "price": 3600
  },
  {
   "slug": "shefflera-nora-2",
@@ -184,7 +197,8 @@ window.PRODUCTS = [
    "67/1769625945_26514867.jpg",
    "35/1769625945_88876035.jpg",
    "95/1769625946_37119495.jpg"
-  ]
+  ],
+  "price": 3225
  },
  {
   "slug": "fikus-bendzhamina-v-kitayskom-",
@@ -198,7 +212,8 @@ window.PRODUCTS = [
    "74/1790954520_33097674.jpg",
    "16/1790954522_78859116.jpg",
    "21/1790954524_48738721.jpg"
-  ]
+  ],
+  "price": 3600
  },
  {
   "slug": "tradeskanciya-krasnolistnaya",
@@ -212,7 +227,8 @@ window.PRODUCTS = [
    "13/1790955086_10497713.jpg",
    "26/1790955089_94270026.jpg",
    "31/1790955091_52743831.jpg"
-  ]
+  ],
+  "price": 3600
  },
  {
   "slug": "tradeskanciya-rozovaya-v-kashp",
@@ -225,7 +241,8 @@ window.PRODUCTS = [
    "65/1790954294_55904365.jpg",
    "28/1790954296_53616228.jpg",
    "81/1790954298_67013081.jpg"
-  ]
+  ],
+  "price": 3000
  },
  {
   "slug": "epipremnum-marbl-kvin-liana",
@@ -238,7 +255,8 @@ window.PRODUCTS = [
    "19/1790955294_90430519.jpg",
    "41/1790955297_45146641.jpg",
    "76/1790955299_57528776.jpg"
-  ]
+  ],
+  "price": 3100
  },
  {
   "slug": "zamiokulkas-pletenoe-kashpo",
@@ -252,7 +270,8 @@ window.PRODUCTS = [
    "12/1775660342_52428112.jpg",
    "96/1775660343_75477896.jpg",
    "52/1775660345_37856452.jpg"
-  ]
+  ],
+  "price": 2000
  },
  {
   "slug": "krassula-tolstyanka-3827",
@@ -264,7 +283,8 @@ window.PRODUCTS = [
    "45/1765483493_91335545.jpg",
    "83/1765483493_73985883.jpg",
    "36/1765483493_19099336.jpg"
-  ]
+  ],
+  "price": 2670
  },
  {
   "slug": "mini-sad-sukkulenty-podarochni",
@@ -278,7 +298,8 @@ window.PRODUCTS = [
    "11/1776687762_87070111.jpg",
    "90/1776687762_89003890.jpg",
    "62/1776687762_83693062.jpg"
-  ]
+  ],
+  "price": 2850
  },
  {
   "slug": "nabor-rasteniy-ko-dnyu-uchitel",
@@ -291,6 +312,7 @@ window.PRODUCTS = [
    "24/1790695677_89310924.jpg",
    "27/1790695679_53986227.jpg",
    "91/1790695681_38905291.jpg"
-  ]
+  ],
+  "price": 2900
  }
 ];
