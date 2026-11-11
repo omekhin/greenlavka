@@ -218,6 +218,7 @@ footer p{margin:0 0 6px}
   .pm-facts{grid-template-columns:1fr}
 }
 body.lock{overflow:hidden}
+.new-badge{position:absolute;top:14px;left:14px;background:var(--blush);color:var(--forest);font-size:12px;font-weight:700;letter-spacing:.04em;padding:5px 12px;border-radius:999px;pointer-events:none}
 </style>
 <link rel="canonical" href="https://green-lavka-37.ru/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -500,6 +501,7 @@ function gallery(p, opts) {
     '<span class="count">1 / ' + n + '</span>' +
     '<div class="dots" aria-hidden="true">' + p.ids.map((_, i) => '<i' + (i === 0 ? ' class="on"' : '') + '></i>').join('') + '</div>' +
     (opts.hint ? '<span class="buy-hint" aria-hidden="true">Подробнее о растении</span>' : '') +
+    (p.isNew ? '<span class="new-badge">Новинка</span>' : '') +
   '</div>';
 }
 function wireGallery(root, plant, onChange) {
